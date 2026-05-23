@@ -1,66 +1,23 @@
-## Foundry
+# Solidity Foundry Practice
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Foundry를 활용해 Solidity 스마트 컨트랙트를 실습하는 저장소입니다.  
+This repository is for practicing Solidity smart contracts with Foundry.
 
-Foundry consists of:
+## Tech Stack
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- Solidity
+- Foundry
+- Forge
+- VS Code
+- Git / GitHub
 
-## Documentation
+## Project Structure
 
-https://book.getfoundry.sh/
+```txt
+src/
+├── Counter.sol
+└── UserStorage.sol
 
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+test/
+├── Counter.t.sol
+└── UserStorage.t.sol
